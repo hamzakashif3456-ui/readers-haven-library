@@ -1,0 +1,12 @@
+{
+  "name": "readers-haven-library",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Readers' Haven Public Library static website",
+  "scripts": {
+    "build": "parcel build src/index.html src/collections.html src/membership.html src/services.html src/contact.html --dist-dir dist --public-url ./"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
