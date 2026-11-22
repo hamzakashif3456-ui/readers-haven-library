@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    Readers' Haven Public Library — Shared Stylesheet
    ========================================================================== */
 
@@ -467,4 +467,131 @@ h3 {
   .hero-actions .btn {
     width: 100%;
   }
+}
+
+
+/* Membership Page */
+
+.membership-page .membership-section {
+    padding: 50px 8%;
+}
+
+.membership-page .membership-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.membership-page .membership-heading h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.membership-page .membership-heading p {
+    color: #777;
+}
+
+.membership-page .plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+.membership-page .plan {
+    padding: 30px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #e5e0d9;
+    transition: transform 0.3s ease;
+}
+
+.membership-page .plan:hover {
+    transform: translateY(-5px);
+}
+
+.membership-page .plan h2 {
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.membership-page .plan .price {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.membership-page .plan .price small {
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+}
+
+.membership-page .plan ul {
+    padding-left: 20px;
+    line-height: 2;
+}
+
+.membership-page .plan li {
+    margin-bottom: 8px;
+}
+
+.membership-page .plan-note {
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+.membership-page .plan.featured {
+    border: 2px solid #b68b65;
+    background: #faf6f1;
+}
+
+.membership-page .notice {
+    margin-top: 40px;
+    padding: 25px;
+    background: #f5f0e9;
+    border-radius: 10px;
+    line-height: 1.7;
+}
+
+.membership-page .notice h3 {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .membership-page .plans {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-page .membership-section {
+        padding: 35px 5%;
+    }
+
+    .membership-page .membership-heading h2 {
+        font-size: 24px;
+    }
+
+    .membership-page .plan {
+        padding: 25px;
+    }
+
+    .membership-page .page-hero h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .membership-page .plan .price {
+        font-size: 23px;
+    }
+
+    .membership-page .notice {
+        padding: 18px;
+    }
+
 }
